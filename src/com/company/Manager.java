@@ -44,11 +44,15 @@ public class Manager implements LeagueManager {
         SockerPlayer player;
         while(iter.hasNext()) {
             player = iter.next();
-            if (player.getCountry().equals(t)) {
-                sockerPlayers.add(player);
+            if (t instanceof Country) {
+                if (player.getCountry().equals(t)) {
+                    sockerPlayers.add(player);
+                }
             }
-            if (player.getLeague().equals(t)) {
-                sockerPlayers.add(player);
+            if (t instanceof League) {
+                if (player.getLeague().equals(t)) {
+                    sockerPlayers.add(player);
+                }
             }
         }
 
