@@ -2,10 +2,9 @@ package com.company;
 
 import java.util.*;
 
-/**
- * Created by tyuly on 04.12.2016.
- */
+
 public class Manager implements LeagueManager {
+
     Set <SockerPlayer> players = new HashSet<>();
 
 

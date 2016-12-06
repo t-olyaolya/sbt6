@@ -32,6 +32,8 @@ public class Main {
             }
         }
         manager.addPlayer(new Player("player1", 100, League.ПЕРВАЯ, Country.GREECE)); //не будет добавлен
+        manager.addPoints("player1",150);
+
 
         output(Country.class, manager);
         output(League.class, manager);
